@@ -1,4 +1,19 @@
 <div class="home">
   <h3>This is Home component</h3>
+  <br>
+  <input type="text" [(ngModel)]="name" />
   <h4>Hello {{ name }}</h4>
+  <button (click)="resetName()">Reset Name</button>
+  <br>
+  <input type="text" [(ngModel)]="age" />
+  <h3>Tuổi bạn là {{age}}</h3>
+
+  <div *ngIf="age <= 18; then tre else gia"></div>
+  <ng-template #tre><h2>Bạn còn trẻ quá</h2></ng-template>
+  <ng-template #gia><h2>Bạn đã già rồi</h2></ng-template>
+
+  <h1>Trái cây</h1>
+  <ul *ngFor="let trai of traiCay; let i = index">
+    <li>{{i + 1 }}. {{trai}}</li>
+  </ul>
 </div>
