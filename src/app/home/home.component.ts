@@ -9,6 +9,11 @@ export class HomeComponent implements OnInit {
   public name = 'Tien';
   public age = 15;
   public traiCay = ['Táo', 'Nho', 'Cam'];
+  public traiCay2 = [
+    {name: 'Apple', price: 100, onSale: true},
+    {name: 'Grape', price: 120, onSale: false},
+    {name: 'Orange', price: -50, onSale: true}
+  ]
 
   constructor() { }
 

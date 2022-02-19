@@ -16,4 +16,21 @@
   <ul *ngFor="let trai of traiCay; let i = index">
     <li>{{i + 1 }}. {{trai}}</li>
   </ul>
+  <br>
+  <table class="table">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>OnSale</th>
+    </tr>
+    <tr *ngFor="let trai of traiCay2; let i = index">
+      <th>{{i + 1}}</th>
+      <td>{{trai.name | uppercase}}</td>
+      <td><span [ngClass]="{'negative' : trai.price < 0 }">{{trai.price | currency: "USD":"symbol":"1.2"}}</span></td>
+      <td>
+        <span>{{trai.onSale | onSale | uppercase}}</span>
+      </td>
+    </tr>
+  </table>
 </div>
