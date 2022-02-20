@@ -1,6 +1,18 @@
 <div class="home">
   <h3>This is Home component</h3>
   <br>
+  Tỉnh / Thành phố:
+  <select id="city" (change)="changeCity($event)">
+    <option *ngFor="let city of cities" value="{{city.name}}">{{city.name}}</option>
+  </select>
+  <br>
+  Quận / Huyện:
+  <select id="district">
+    <option *ngFor="let district of districts">{{district}}</option>
+  </select>
+</div>
+<br>
+<div>
   <input type="text" [(ngModel)]="name" />
   <h4>Hello {{ name }}</h4>
   <button (click)="resetName()">Reset Name</button>
@@ -16,6 +28,7 @@
   <ul *ngFor="let trai of traiCay; let i = index">
     <li>{{i + 1 }}. {{trai}}</li>
   </ul>
+</div>
   <br>
   <table class="table">
     <tr>
@@ -33,4 +46,5 @@
       </td>
     </tr>
   </table>
-</div>
+  <br>
+
