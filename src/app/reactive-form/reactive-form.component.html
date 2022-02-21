@@ -1,0 +1,16 @@
+<p>template-driven-form works!</p>
+<form [formGroup]="formData" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input type="text" formControlName="name" />
+
+  </label>
+  <br />
+  <label>
+    Age:
+    <input type="text" formControlName="age" />
+
+  </label>
+  <br />
+  <button type="submit" [disabled]="!formData.valid">Submit</button>
+</form>
