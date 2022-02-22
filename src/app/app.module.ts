@@ -14,6 +14,8 @@ import { HighLightDirective } from './Directives/high-light.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { PostComponent } from './post/post.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildrenComponent } from './children/children.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { PostComponent } from './post/post.component';
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
     PostComponent,
+    ParentComponent,
+    ChildrenComponent,
   ],
   imports: [
     BrowserModule,

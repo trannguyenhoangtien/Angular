@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<br>
+<p>{{parentMsg}}</p>
+<button (click)="giveMoney()">Give money</button>
+<app-children #thangTeo name="Tèo" (callFromChildrent)="helloChildren($event)"></app-children>
+<app-children #thangTy name="Tý" (callFromChildrent)="helloChildren($event)"></app-children>
