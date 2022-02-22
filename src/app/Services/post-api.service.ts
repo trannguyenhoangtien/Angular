@@ -20,6 +20,11 @@ export class PostApiService {
     return this.httpClient.get<any>(url, this.httpOptions);
   }
 
+  public postComments(payload: any): Observable<any> {
+    const url = `${this.REST_API_SERVICE}/comments`;
+    return this.httpClient.post<any>(url, payload, this.httpOptions);
+  }
+
   public getUsers(users: number = 1): Observable<any> {
     const url = `${this.REST_API_SERVICE_RANDOM_USER}` + users;
     return this.httpClient.get<any>(url, this.httpOptions);
