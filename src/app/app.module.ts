@@ -16,6 +16,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { PostComponent } from './post/post.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildrenComponent } from './children/children.component';
+import { QRCodeModule } from 'angular2-qrcode';
+import { QrCodeComponent } from './qr-code/qr-code.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { ChildrenComponent } from './children/children.component';
     PostComponent,
     ParentComponent,
     ChildrenComponent,
+    QrCodeComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { ChildrenComponent } from './children/children.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    QRCodeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

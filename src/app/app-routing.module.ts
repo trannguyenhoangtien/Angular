@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParentComponent } from './parent/parent.component';
 import { PostComponent } from './post/post.component';
+import { QrCodeComponent } from './qr-code/qr-code.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'reactive-form', component: ReactiveFormComponent },
   { path: 'post', component: PostComponent },
   { path: 'parent', component: ParentComponent },
+  { path: 'qr-code', component: QrCodeComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

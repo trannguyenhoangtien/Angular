@@ -1,0 +1,9 @@
+<p>qr-code works!</p>
+URL: <input type="text" (keyup)="change($event)" />
+<br>
+Name: <input type="text" (change)="changeName($event)" style="width: 400px" />
+<br />
+Age: <input type="text" (change)="changeAge($event)" style="width: 100px;" />
+<br />
+<p>{{qrInfo}}</p>
+<qr-code [value]="qrInfo" [size]="width"></qr-code>
